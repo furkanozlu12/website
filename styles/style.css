@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color:#d3d3d3;
+    --black-color:#212121;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0  ;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2 ease;
+}
+
+/*! base html codes*/
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+html::-webkit-scrollbar-track{
+    background-color: #8D6E63;
+}
+html::-webkit-scrollbar-thumb{
+    width: 0.8rem;
+    background-color: var(--black-color);
+    border-radius: 3rem;
+}
+body{
+    background-color: var(--main-color);
+   
+}
+section{
+    padding: 3.5rem 7%;
+}
+.btn{
+margin-top: 1rem;
+display: inline-block;
+padding: 2rem 3.75rem;
+border-radius: 30rem;
+font-size: 1.7rem;
+color: #fff;
+background-color: var(--black-color);
+
+
+
+}
+.heading{
+color: #000000;
+text-transform: uppercase;
+font-size: 4rem;
+}
+.heading span{
+    text-transform: uppercase;
+}
+
+/*header start*/
+
+.header .logo img{
+    height: 10rem;
+}
+
+.header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7%;
+    margin: 2rem 7%;
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header  .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+
+}
+.header .navbar .active,
+.header  .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+/*header end*/
+/*home start*/
+.anasayfa{
+    min-height: 100vh;
+    background: url(../images/anasafya.jpg)
+     no-repeat;
+     background-size: cover;
+     background-position: center;
+     margin-top: -14.5rem;
+     display: flex;
+     align-items: center;
+    
+}
+.anasayfa .content{
+    max-width: 60rem;
+}
+.anasayfa .content h3{
+    font-size: 6rem;
+    color: #6e6d6d;
+}
+.anasayfa .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #fff;
+    
+}
+/*home end*/
+/*hakkımızda start*/
+
+.hakkımızda .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.hakkımızda .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+ .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+.hakkımızda .box-container .box .hakkımızda-category{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.hakkımızda .box-container .box h3{
+        font-size: 2rem;
+    padding: 1rem 0;}
+    
+    
+/*hakkımızda end*/
+
+/*ekibimiz start*/
+
+.EKİBİMİZ .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.EKİBİMİZ .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.EKİBİMİZ .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+.EKİBİMİZ .box-container .box .ekibimiz-category{
+    font-size: 1.8rem;
+   text-transform: lowercase;
+}
+
+.EKİBİMİZ .box-container .box h3{
+        font-size: 3rem;
+    padding: 1rem 0;}
+ .EKİBİMİZ .box-container .box p{
+        font-size: 2rem;
+    padding: 1rem 0;}
+/*ekibimiz end*/
+/*makale start*/
+.Makale .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.Makale .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 50rem;
+    max-height: 150rem;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Makale .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+.Makale .box-container .box .Makale-category{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.Makale .box-container .box h3{
+        font-size: 3rem;
+    padding: 1rem 0;}
+ .Makale .box-container .box p{
+        font-size: 2rem;
+    padding: 1rem 0;}
+
+
+
+
+
+
+
+
+
+
+
+/*makale end*/
+/*Dilekçe start*/
+.Dilekçe .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+
+.Dilekçe .box-container .box{
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 3rem;
+    background-color: #fff;
+    min-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Dilekçe .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+.Dilekçe .box-container .box .ekibimiz-category{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.Dilekçe .box-container .box h3{
+        font-size: 3rem;
+    padding: 1rem 0;}
+ .Dilekçe .box-container .box p{
+        font-size: 2rem;
+    padding: 1rem 0;}
+
+
+/*Dilekçe end*/
+/*iletişim start*/
+.iletişim .row{
+    display: flex;
+    background-color: var(--black-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.iletişim .row .map{
+    flex-wrap: 1 1 45rem;
+    width: 100%;
+   object-fit: cover;
+
+}
+.iletişim .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+    
+}
+.iletişim .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+    
+}
+.iletişim .row form .inputBox{
+   display: flex;
+   align-items: center;
+   margin: 2rem 0;
+   border: var(--border);
+
+    
+}
+.iletişim .row form .inputBox i{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+ 
+     
+ }
+ .iletişim .row form .inputBox input{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: none;
+    background-color: transparent;
+
+ 
+     
+ }
+
+
+/*iletişim end*/
+/*footer start*/
+.footer{
+    background-color: var(--black-color);
+    text-align: center;
+}
+.footer .search{
+    display: flex;
+    justify-content: center;
+
+}
+.footer .search .search-input{
+    width: 30rem;
+}
+.footer .search .btn{
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+.footer .share{
+    padding: 2rem 0;
+
+}
+.footer .share a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 5rem;
+    border: var(--border);
+    
+    margin:0.5rem ;    
+}
+.footer .share a:hover{
+    background-color: var(--main-color);   
+}
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9rem;
+}
+.footer .links a {
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.footer .links a:hover {
+    background-color: var(--black-color);
+    opacity: 2;
+}
+/*footer end*/
+
+/*responsive start*/
+ @media (max-with: 991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    .header .logo img{
+        height: 7rem;
+    }
+    .section{
+            padding: 2rem;
+    }
+    .product .box-container .box .box-head .name{
+        font-size: 3.4rem;
+    }
+ }
+
+ @media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    
+.header .navbar{
+    position: absolute;
+    top: 95%;
+    background-color: #fff;
+    height: calc(100vh - 9rem);
+    width: 30rem;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+    right: -100%;
+
+    
+
+}
+.header .navbar.active{
+    right: 3rem;
+}
+       .header .navbar a {
+        color: var(--black-color);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+
+       }
+ }
+
+/*responsive end*/
+
+
